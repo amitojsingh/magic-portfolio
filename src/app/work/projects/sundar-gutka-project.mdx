@@ -1,0 +1,42 @@
+---
+title: "Sundar Gutka – A Modern Gurbani App"
+publishedAt: "2025-07-31"
+summary: "Led the development of Sundar Gutka, a cross-platform Sikh prayer app built with React Native, featuring audio playback, offline access, and integration with BaniDB and STTM."
+images:
+  - "/images/projects/sundar-gutka/cover-01.png"
+team:
+  - name: "Amitoj Singh"
+    role: "Lead Developer & Architect"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/singh-amitoj/"
+link: "https://play.google.com/store/apps/details?id=com.WahegurooNetwork.SundarGutka&hl=en-US"
+---
+
+## Overview
+
+Sundar Gutka is a clean and intuitive Gurbani app for daily Sikh prayers, supporting multiple audio tracks, custom fonts, bookmarking, and offline access. Designed to be spiritually enriching yet technically robust, it supports seamless Gurbani reading across iOS and Android devices.
+
+## Key Features
+
+- **Bani Reader**: Optimized for readability with adjustable font size, Gurmukhi Unicode rendering, day/night themes, and scroll memory per bani.
+- **Audio Playback**: Integrated a track-based audio system with support for multiple raagis and dynamic streaming via AWS S3.
+- **Database Sync**: Connected with the BaniDB and STTM APIs to provide structured and accurate Gurbani content.
+- **Offline Mode**: Enabled offline caching of both bani text and selected audio tracks for uninterrupted access.
+- **Admin Tools**: Built internal tools to sync new banis, update metadata, and manage playlists through Firebase and GitHub Actions.
+- **Accessibility Focus**: Implemented support for screen readers, logical navigation, and font scaling for diverse user needs.
+
+## Technologies Used
+
+- **React Native + TypeScript**: For cross-platform development and performance optimizations.
+- **Firebase**: For app distribution, crash reporting, and dynamic content.
+- **AWS S3**: To host and stream audio efficiently.
+- **SQLite**: For local data persistence and offline access.
+- **Reanimated + Gesture Handler**: For smooth animations and gesture-based navigation.
+
+## Challenges and Learnings
+
+One of the biggest challenges was ensuring consistency across diverse iOS devices (e.g. iPhone 13 vs. 13 Pro), especially around animation behaviors and header visibility using Reanimated. We implemented conditional rendering and improved WebView compatibility to address device-specific quirks. Collaborating with the BaniDB team also taught us the importance of stable schemas and versioned content sync.
+
+## Outcome
+
+The app is now actively used by the global Sikh community and has contributed to a more accessible and modern spiritual experience. It’s being adopted by Gurmat camps, personal saadh sangat, and international Sikhi projects, with ongoing contributions from designers, developers, and audio sevadaars.
