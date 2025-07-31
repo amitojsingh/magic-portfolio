@@ -1,16 +1,16 @@
 import { Logo } from "@once-ui-system/core";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Amitoj",
+  lastName: "Singh",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Software Engineer",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "amitojsingh95@gmail.com",
+  location: "America/Edmonton", // Calgary, AB timezone
+  languages: ["English", "Punjabi", "Hindi"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -18,8 +18,8 @@ const newsletter = {
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      I occasionally write about software development, React.js, React Native,
+      and share insights on building scalable applications.
     </>
   ),
 };
@@ -30,17 +30,12 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/amitojsingh",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.linkedin.com/in/singh-amitoj/",
   },
   {
     name: "Email",
@@ -54,17 +49,24 @@ const home = {
   image: "/images/og/home.jpg",
   label: "Home",
   title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  description: `Portfolio website showcasing my work as a ${person.role} with 7+ years of experience in web and mobile development`,
+  headline: <>Building scalable applications with React.js and React Native</>,
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
+    title: (
+      <>
+        Recent project:{" "}
+        <strong className="ml-4">Cross-platform Mobile App</strong>
+      </>
+    ),
     href: "/work/building-once-ui-a-customizable-design-system",
   },
   subline: (
     <>
-      I'm Selene, a design engineer at <Logo icon="/trademarks/wordmark-dark.svg" style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Amitoj, a Software Engineer with over 7 years of experience in web and
+      mobile application development,
+      <br /> specializing in React.js and React Native. Passionate about
+      building intuitive user experiences.
     </>
   ),
 };
@@ -73,7 +75,7 @@ const about = {
   path: "/about",
   label: "About",
   title: `About – ${person.name}`,
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  description: `Meet ${person.name}, ${person.role} from Calgary, AB with 7+ years of experience`,
   tableOfContent: {
     display: true,
     subItems: false,
@@ -83,16 +85,22 @@ const about = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "https://cal.com/amitojsingh",
   },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Amitoj is a Calgary-based Software Engineer with over 7 years of
+        experience in web and mobile application development, specializing in
+        React.js and React Native. He has a proven track record of delivering
+        scalable, high-performance applications and collaborating across
+        cross-functional teams. Adept at writing clean, maintainable code,
+        authoring technical documentation, and driving development best
+        practices. Passionate about building intuitive user experiences and
+        contributing to the growth of innovative platforms through both
+        technical expertise and leadership.
       </>
     ),
   },
@@ -101,42 +109,105 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Khalis Foundation",
+        timeframe: "01/2022 - Present",
+        role: "Software Engineer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Modernized legacy codebases (React, Node.js, TypeScript) using
+            modular architecture and reusable components, improving performance
+            and reducing maintenance overhead.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Built and deployed cross-platform apps in React Native (700k+
+            installs), optimizing UI/UX and boosting active users by 20%.
+          </>,
+          <>
+            Implemented CI/CD pipelines with Fastlane and GitHub Actions,
+            streamlining app releases across iOS and Android.
+          </>,
+          <>
+            Authored clear technical docs and onboarding workflows using Notion
+            and ClickUp, reducing ramp-up time for new devs.
+          </>,
+          <>
+            Collaborated in Agile teams, leading code reviews and promoting best
+            practices in testing (Jest, Detox), linting, and version control.
+          </>,
+          <>
+            Developed cross-platform software for mobile and desktop, with
+            experience in native modules, Firebase, and AWS services.
           </>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
           {
             src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
+            alt: "React Native App Development",
             width: 16,
             height: 9,
           },
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Fleet Hawks Inc.",
+        timeframe: "10/2020 - 07/2022",
+        role: "Software Developer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Led a team of 10 developers, spearheading multiple projects to
+            successful delivery.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Updated old code bases to modern development standards, improving
+            functionality.
           </>,
+          <>
+            Collaborated with project managers to select ambitious but realistic
+            coding milestones on pre-release software project development.
+          </>,
+          <>
+            Utilized AWS services (EC2, S3, RDS, Lambda) to build scalable,
+            secure cloud-based infrastructures, enhancing deployment pipelines
+            and data storage solutions.
+          </>,
+          <>
+            Designed intuitive graphical user interfaces to improve user
+            experience.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Cambridge Cultural Association",
+        timeframe: "12/2019 - 09/2020",
+        role: "Freelance Web Developer",
+        achievements: [
+          <>
+            Planned website development, converting mockups into a usable web
+            presence with HTML, JavaScript, AJAX and JSON coding.
+          </>,
+          <>
+            Provided front-end website development using WordPress, WooCommerce
+            and other editing software.
+          </>,
+          <>
+            Provided security maintenance and patching on the website interface
+            to maintain viability after launch.
+          </>,
+          <>
+            Designed, implemented and monitored web pages, plugins and
+            functionality for continuous improvement.
+          </>,
+          <>
+            Oversaw technical issues and troubleshooting requests to resolve
+            user problems.
+          </>,
+          <>
+            Generated web hosting presence to accommodate specified needs and
+            maintain files on account.
+          </>,
+          <>Gathered the user traffic with more than 10k users in one day.</>,
         ],
         images: [],
       },
@@ -144,49 +215,85 @@ const about = {
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "Education",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Post Graduate Diploma: Web and Mobile App Design and Development",
+        description: (
+          <>
+            Conestoga College - Kitchener, ON (2019). Elected as President of
+            the Sikh Student Association in 2019. Dean's List Student of Highest
+            Distinction.
+          </>
+        ),
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Bachelor of Technology: Computer Science",
+        description: (
+          <>
+            Guru Nanak Dev Engineering College - Ludhiana (2017). Member of the
+            Linux User Group. Elected Captain of Cricket Team. Mentored Google
+            Code-In. Awarded Best Project in the Education Category.
+          </>
+        ),
+      },
+      {
+        name: "Diploma: Computer Science",
+        description: (
+          <>
+            Guru Nanak Dev Polytechnic College - Ludhiana (2014). Member of the
+            Great Developer Group. Awarded Most Innovative Project.
+          </>
+        ),
       },
     ],
   },
   technical: {
     display: true, // set to false to hide this section
-    title: "Technical skills",
+    title: "Technical Skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        title: "Languages",
+        description: (
+          <>JavaScript (ES6+), TypeScript, C++, PHP, HTML, CSS/SASS</>
+        ),
         // optional: leave the array empty if you don't want to display images
         images: [
           {
             src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
+            alt: "JavaScript Development",
             width: 16,
             height: 9,
           },
         ],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+        title: "Frameworks/Libraries",
+        description: <>React.js, Angular, Redux, React Native, Next.js</>,
+        // optional: leave the array empty if you don't want to display images
+        images: [
+          {
+            src: "/images/projects/project-01/cover-03.jpg",
+            alt: "React Development",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "Tools & Technologies",
+        description: (
+          <>
+            Git, Bitbucket, NPM, Docker, AWS (EC2, S3, RDS, Lambda), MySQL,
+            Responsive & Mobile-Web Design, REST/GraphQL APIs, Low-Latency
+            Messaging (WebSockets, Kafka), CI/CD, Agile/Scrum
+          </>
+        ),
         // optional: leave the array empty if you don't want to display images
         images: [
           {
             src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
+            alt: "AWS Cloud Services",
             width: 16,
             height: 9,
           },
@@ -199,7 +306,7 @@ const about = {
 const blog = {
   path: "/blog",
   label: "Blog",
-  title: "Writing about design and tech...",
+  title: "Writing about software development and tech...",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
@@ -209,7 +316,7 @@ const work = {
   path: "/work",
   label: "Work",
   title: `Projects – ${person.name}`,
-  description: `Design and dev projects by ${person.name}`,
+  description: `Software development projects by ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
   // All projects will be listed on the /home and /work routes
 };
