@@ -74,7 +74,12 @@ export default async function Blog({
 
   return (
     <Row fillWidth>
-      <Row maxWidth={12} className="hide-on-tablet">
+      <Row
+        maxWidth={12}
+        hide={false}
+        className="hide-on-tablet hide-on-mobile"
+      />
+      <Row fillWidth horizontal="center">
         <Column as="section" maxWidth="xs" gap="l">
           <Schema
             as="blogPosting"
@@ -127,7 +132,8 @@ export default async function Blog({
         position="sticky"
         top="80"
         gap="16"
-        className="hide-on-tablet"
+        className="hide-on-tablet hide-on-mobile"
+        hide={false}
       >
         <Row
           gap="12"
