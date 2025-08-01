@@ -14,12 +14,6 @@
     top: var(--static-space-64);
 }
 
-.tableOfContents {
-  @media (max-width: 1024px) {
-    display: none !important;
-  }
-}
-
 @media (max-width: breakpoints.$s) {
     .avatar {
         top: auto;

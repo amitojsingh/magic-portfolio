@@ -1,20 +1,20 @@
 import { home } from "./content";
 
 // IMPORTANT: Replace with your own domain address - it's used for SEO in meta tags and schema
-const baseURL = "https://amitojsingh.me";
+const baseURL = "https://demo.magic-portfolio.com";
 
 const routes = {
   "/": true,
   "/about": true,
   "/work": true,
   "/blog": true,
-  "/gallery": false,
+  "/gallery": true,
 };
 
 const display = {
   location: true,
   time: true,
-  themeSwitcher: true,
+  themeSwitcher: true
 };
 
 // Enable password protection on selected routes
@@ -69,7 +69,7 @@ const style = {
   border: "playful", // rounded | playful | conservative
   surface: "translucent", // filled | translucent
   transition: "all", // all | micro | macro
-  scaling: "100", // 90 | 95 | 100 | 105 | 110
+  scaling: "100" // 90 | 95 | 100 | 105 | 110
 };
 
 const dataStyle = {
@@ -82,7 +82,7 @@ const dataStyle = {
   tick: {
     fill: "var(--neutral-on-background-weak)",
     fontSize: 11,
-    line: false,
+    line: false
   },
 };
 
@@ -128,8 +128,7 @@ const effects = {
 };
 
 const mailchimp = {
-  action:
-    "https://amitojsingh.us9.list-manage.com/subscribe/post?u=3c6c164d81d8ad8de730e645a&id=3d11de904f&f_id=0082c2e1f0",
+  action: "https://url/subscribe/post?parameters",
   effects: {
     mask: {
       cursor: true,
@@ -169,35 +168,23 @@ const mailchimp = {
       thickness: 1,
       angle: 90,
     },
-  },
+  }
 };
 
 // default schema data
 const schema = {
   logo: "",
-  type: "Person",
-  name: "Amitoj Singh",
+  type: "Organization",
+  name: "Once UI",
   description: home.description,
-  email: "amitojsingh95@gmail.com",
+  email: "lorant@once-ui.com",
 };
 
 // social links
 const sameAs = {
-  github: "https://github.com/amitojsingh",
-  linkedin: "https://www.linkedin.com/in/singh-amitoj/",
-  email: "mailto:amitojsingh95@gmail.com",
+  threads: "https://www.threads.com/@once_ui",
+  linkedin: "https://www.linkedin.com/company/once-ui/",
+  discord: "https://discord.com/invite/5EyAQ4eNdS",
 };
 
-export {
-  display,
-  mailchimp,
-  routes,
-  protectedRoutes,
-  baseURL,
-  fonts,
-  style,
-  schema,
-  sameAs,
-  effects,
-  dataStyle,
-};
+export { display, mailchimp, routes, protectedRoutes, baseURL, fonts, style, schema, sameAs, effects, dataStyle };
