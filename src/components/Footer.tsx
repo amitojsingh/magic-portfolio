@@ -11,7 +11,7 @@ export const Footer = () => {
       fillWidth
       padding="8"
       horizontal="center"
-      className="mobile-column"
+      mobileDirection="column"
     >
       <Flex
         className={styles.mobile}
@@ -19,7 +19,7 @@ export const Footer = () => {
         paddingY="8"
         paddingX="16"
         gap="16"
-        horizontal="between"
+        horizontal="space-between"
         vertical="center"
       >
         <Text variant="body-default-s" onBackground="neutral-strong">
@@ -28,7 +28,9 @@ export const Footer = () => {
           <Text onBackground="neutral-weak">
             {/* Usage of this template requires attribution. Please don't remove the link to Once UI. */}
             / Build your portfolio with{" "}
-            <SmartLink href="https://once-ui.com/products/magic-portfolio">
+            <SmartLink
+              href="https://once-ui.com/products/magic-portfolio"
+            >
               Once UI
             </SmartLink>
           </Text>
@@ -45,11 +47,11 @@ export const Footer = () => {
                   size="s"
                   variant="ghost"
                 />
-              )
+              ),
           )}
         </Flex>
       </Flex>
-      <Flex height="80" className="show-on-mobile"></Flex>
+      <Flex height="80" show="s"></Flex>
     </Flex>
   );
 };
